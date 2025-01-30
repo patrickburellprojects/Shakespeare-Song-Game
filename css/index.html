@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shakespeare’s Sonnet Songs - Intro</title>
+  <!-- Google Font + CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap" 
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body onload="resetLocalStorage()">
+  <!-- Clears leftover tempScore so the game won't start in Game Over. -->
+
+  <main class="intro-container">
+    <h1 class="intro-title">Welcome to Shakespeare’s Sonnet Songs</h1>
+
+    <section class="intro-box">
+      <h2 class="intro-heading">Game Explanation</h2>
+      <p class="intro-text">
+        In this game, we transform modern pop songs into Shakespearean sonnets! 
+        We reference musicals, Disney hits, oldies, country ballads, rap anthems, 
+        contemporary tracks, and much more.
+      </p>
+
+      <h2 class="intro-heading">Scoring</h2>
+      <p class="intro-text">
+        You begin with 20 points. Every correct guess earns <strong>+10</strong> points, 
+        every incorrect guess deducts <strong>-5</strong>, and each hint used deducts <strong>-5</strong>. 
+        If your score hits <strong>0</strong>, the game ends immediately.
+      </p>
+      <p class="intro-text">
+        Are you ready to decode the verse and match it to the modern tune?
+      </p>
+    </section>
+
+    <div class="begin-btn-container">
+      <a href="sonnet-songs.html" class="begin-btn">Begin</a>
+    </div>
+  </main>
+
+  <script>
+    function resetLocalStorage() {
+      // Remove leftover game-end data
+      localStorage.removeItem('tempScore');
+    }
+  </script>
+</body>
+</html>
