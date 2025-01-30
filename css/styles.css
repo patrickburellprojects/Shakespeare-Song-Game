@@ -1,0 +1,378 @@
+/*
+   Overall background: #FDB033
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "EB Garamond", serif;
+  background-color: #FDB033; 
+  color: #000;
+}
+
+/* ----- Intro Page (index.html) ----- */
+.intro-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.intro-title {
+  color: #9E0000;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.intro-box {
+  background-color: #FFDB8C;
+  border: 2px solid #9E0000;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.intro-heading {
+  color: #9E0000;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.intro-text {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.begin-btn-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.begin-btn {
+  background-color: #9E0000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 14px 20px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+.begin-btn:hover {
+  background-color: #b80000;
+}
+
+
+/* ----- Main Game Page (sonnet-songs.html) ----- */
+.game-page-title {
+  text-align: center;
+  color: #9E0000;
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+
+.game-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+  align-items: center; /* vertical centering */
+}
+
+/* Left Panel */
+.left-panel {
+  flex: 1;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sonnet-number-heading {
+  font-size: 1.8rem;
+  color: #9E0000;
+}
+
+.sonnet-box {
+  background-color: #FFDB8C;
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.sonnet-text {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  min-height: 300px;
+}
+
+/* Right Panel */
+.right-panel {
+  flex: 1;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center; 
+}
+
+.answer-line {
+  display: flex;
+  gap: 10px;
+}
+
+.answer-input {
+  flex: 1;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+.submit-btn {
+  background-color: #9E0000;
+  color: #fff;
+  border: none;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.submit-btn:hover {
+  background-color: #b80000;
+}
+.submit-btn:active {
+  background-color: #008000; 
+  transition: background-color 0.1s;
+}
+
+.hints-row {
+  display: flex;
+  gap: 15px;
+}
+
+.hint-box {
+  position: relative;
+  width: 120px;
+  height: 60px;
+  background-color: #FFDB8C;
+  border: 2px solid #000;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.hint-box:hover {
+  background-color: #FFE7AD;
+}
+.hint-label {
+  color: #800080;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.score-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.score-box {
+  background-color: #FFDB8C;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 2px solid #000;
+  text-align: center;
+  min-width: 140px;
+}
+
+.score-title {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #006400;
+}
+
+.score-value {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.end-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 16px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.end-btn:hover {
+  background-color: #333;
+}
+
+/* Overlays */
+.answer-feedback-overlay,
+.game-over-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.answer-feedback-content,
+.game-over-content {
+  background-color: #FFDB8C;
+  border: 3px solid #000;
+  color: #000;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 500px;
+  font-size: 1.5rem;
+}
+
+.game-over-overlay {
+  background-color: rgba(158, 0, 0, 0.8);
+}
+
+
+/* ----- Scoreboard Page (scoreboard.html) ----- */
+.scoreboard-container {
+  background-color: #FFDB8C;
+  border: 3px solid #9E0000;
+  border-radius: 8px;
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 30px;
+}
+
+.scoreboard-title {
+  text-align: center;
+  color: #9E0000;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.name-entry-box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.scoreboard-btn {
+  background-color: #9E0000;
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 8px 15px;
+  margin-left: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+.scoreboard-btn:hover {
+  background-color: #b80000;
+}
+
+.final-score-display {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+.scores-box {
+  background-color: #FFE7AD;
+  border: 2px solid #9E0000;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.scores-box h2 {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.score-item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #FFDB8C;
+  border: 2px solid #000;  
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 10px;
+  max-width: 300px;
+}
+
+.player-name, .player-score {
+  flex: 1;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.so-what-for {
+  background-color: #ffdba1;
+  border: 2px dashed #9E0000;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.explanation-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.play-again-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.big-replay-btn {
+  font-size: 1.2rem;
+  padding: 12px 20px;
+}
+
+.feedback-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.feedback-section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #9E0000;
+}
+
+#feedbackInput {
+  width: 80%;
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 10px;
+  font-family: "EB Garamond", serif;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.feedback-note {
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
