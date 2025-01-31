@@ -1,7 +1,7 @@
 // game.js
 
 /****************************
- * 1) Sonnet Data (20 total)
+ * 1) Sonnet Data (30 total)
  ****************************/
 const sonnets = [
   {
@@ -443,6 +443,226 @@ For life is best when lived in mirth and play.`,
     answer: "the bare necessities",
     hint1: "Disney",
     hint2: "Jungle Book"
+  },
+  {
+    text: `O chains that bind, dost thou not hear mine call?
+The heavens shine with stars yet still untread.
+No earthly weight shall bid my spirit fall,
+For I dost chase where none before hath led.
+
+Thy voice dost raise my soul beyond this place,
+A faith that lifts, though doubts dost grasp me tight.
+No force nor hand shall hold my heart in place,
+For I dost rise to seek the endless height.
+
+The sky dost stretch with boundless space unknown,
+Yet in thine eyes, I find the strength to fly.
+The world may mark us twain as dust alone,
+Yet wings dost form when hearts dost burn so high.
+
+No limit yet remains on land nor sea,
+For lo, my fate—I soar, I rise, I’m free.`,
+    answer: "breaking free",
+    hint1: "Disney Channel",
+    hint2: "Troy & Gabriella"
+  },
+  {
+    text: `The night dost call, yet sleep forsakes my mind,
+For wisdom ne’er dost follow age’s tread.
+The clock strikes on, yet naught but woe I find,
+And specters past dost gather round my bed.
+
+Too oft alone, my thoughts do twist and turn,
+A puppeteer of folly and of sin.
+What price I pay for schemes that brightly burn,
+Yet leave but ash where once the fire had been.
+
+A beast am I, too large for walls to bear,
+A giant shadow cast upon the land.
+I wake in cries, yet none dost seem to care,
+As fate dost pull from me what once I planned.
+
+If blame be sought, then none dost look to thee,
+For all dost know the wretched cause is me.`,
+    answer: "anti hero",
+    hint1: "Pop - 2022",
+    hint2: "Taylor Swift"
+  },
+  {
+    text: `If fate dost bid that I should take my leave,
+Then with my love shall I depart anon.
+No heavy chains dost bind me here to grieve,
+Yet in my heart, thou never shalt be gone.
+
+For love is not a prison made of stone,
+Nor doth it fade when distance marks its place.
+A whispered wish, a love that once was known,
+Doth linger still upon the empty space.
+
+No bitter word, no tear upon thy cheek,
+Shall mark this parting or this gentle pain.
+For all I wish is joy where’er ye seek,
+And love to warm thee should the cold remain.
+
+So though I go, and stand no more with thee,
+This love shall stay—it lives eternally.`,
+    answer: "i will always love you",
+    hint1: "Whitney",
+    hint2: "love's farewell"
+  },
+  {
+    text: `A double life dost dance upon the stage,
+By day unseen, by night a star so bright.
+The courtly halls dost whisper soft with rage,
+Yet on the boards, I shine in golden light.
+
+To live as two, to walk with steps unbound,
+A secret held where none dost see my guise.
+Yet lo, the music calls, the drums resound,
+And in the dark, my heart dost touch the skies.
+
+O fleeting joy, dost any truly see,
+That I am twain, yet both dost make me whole?
+For though the world dost cheer my melody,
+A quiet truth dost sing within my soul.
+
+One life to live, yet twain dost mark my way,
+To mix them both—that is my grand ballet.`,
+    answer: "best of both worlds",
+    hint1: "Disney Channel",
+    hint2: "Hannah"
+  },
+  {
+    text: `O brothers, sisters, dost thou hear the sound?
+A song of mirth where hearts do weave as one.
+No walls remain where hands dost now be found,
+No stars alone when all dost seek the sun.
+
+Each voice dost blend where fate had torn apart,
+No chain nor bond dost part the kindred soul.
+For none dost stand alone in fearsome heart,
+When all dost seek the same unyielding goal.
+
+Together, lo, we break the chains of doubt,
+And find our strength within the other’s grace.
+For none dost shine when fear dost cast them out,
+But hand in hand, dost light the darkest place.
+
+One path, one dream, one voice that rings so bright,
+When joined as one, all fade into the light.`,
+    answer: "we're all in this together",
+    hint1: "Disney Channel",
+    hint2: "High School"
+  },
+  {
+    text: `A distant land dost call me soft and low,
+Where tempest breaks upon the golden plain.
+A hundred hands couldst bid me not to go,
+Yet still I turn, I bless the rolling rain.
+
+The rivers cry where none hath walked before,
+And winds dost hum of secrets lost in time.
+A place unknown, yet loved forevermore,
+Where heart and soul dost in their longing climb.
+
+O fate, dost bid me stay, dost call me back?
+Or let me wander forth through fate untamed?
+No force of man canst turn me from this track,
+For in the storm, my love is yet proclaimed.
+
+The rain dost fall upon the earth so wide,
+And I must go where love and fate abide.`,
+    answer: "africa",
+    hint1: "Classic rock",
+    hint2: "Toto"
+  },
+  {
+    text: `O fairest sprite, dost dance with fleeting grace,
+A vision clad in silk where bright lights gleam.
+Thy footsteps twirl through night’s embracing space,
+A fleeting star that lives within a dream.
+
+The road dost stretch, yet still thy heart doth roam,
+A melody that none dost dare to chain.
+The sky dost call, yet thou dost make it home,
+And in the dust, thy steps dost leave no stain.
+
+Hold thee to me, and let the morning lie,
+Count thou the lights that line the darkened way.
+No hands dost bid thee bow, nor fate deny,
+For thou art free where music bids thee stay.
+
+Through shifting sands, thy grace dost never fade,
+A dancer small, yet ne’er dost be afraid.`,
+    answer: "tiny dancer",
+    hint1: "Classic rock",
+    hint2: "Elton John"
+  },
+  {
+    text: `The world dost turn, yet changèd be its grace,
+No more dost time allow what once had been.
+We stand alone, yet in the selfsame place,
+Yet lo, the days dost whisper tales unseen.
+
+The past was warm, a light in golden hue,
+Yet now ‘tis dimm’d, though none dost know the hour.
+A fleeting wisp of joy once bright and true,
+Now lost within the halls of mem’ry’s power.
+
+Dost thou not see? The world dost wear new guise,
+And none may shape it to its former air.
+We dance alone beneath unseeing skies,
+A stranger’s hand where once love lingered fair.
+
+No more the same, nor shall it e’er return,
+For time hath writ its fate and bid it burn.`,
+    answer: "as it was",
+    hint1: "Pop - 2022",
+    hint2: "Harry Styles"
+  },
+  {
+    text: `Upon the road where once we twain did ride,
+Now only I dost tread these weary ways.
+The street dost hum, yet silence fills mine side,
+For love once sworn hath met its end of days.
+
+How canst thou smile when I dost pine alone?
+Dost thou not hear the echoes of our past?
+Thy name was writ upon my heart in stone,
+Yet now ‘tis dust, blown swift upon the blast.
+
+Another waits where I once held thee near,
+Her voice dost laugh where mine dost silent weep.
+The path we walked now fills mine heart with fear,
+For love once known dost haunt the road so deep.
+
+The wheels do turn, yet ne’er dost bring thee nigh,
+For love, though sworn, was but a fleeting lie.`,
+    answer: "drivers license",
+    hint1: "Pop - 2021",
+    hint2: "Olivia Rodrigo"
+  },
+  {
+    text: `Awake, ye hearts who long to quit this land,
+And let thy restless feet take flight anon.
+A city vast doth call with beck’ning hand,
+Where fortune’s favors shine from dusk to dawn.
+
+The stones dost hum with echoes bold and bright,
+A thousand voices twined in mirthful sound.
+Where every step dost claim a golden right,
+And dreams, once lost, dost rise from earthly ground.
+
+What wanderer strays and seeks a world anew,
+Shall find his path where all dost dare to stand.
+For those who rise where city lights dost strew,
+Shall make their mark upon this hallowed land.
+
+If thou canst make thy name ‘midst streets so wide,
+Then anywhere shall fate be on thy side.`,
+    answer: "new york, new york",
+    hint1: "Sinatra",
+    hint2: "city never sleeps"
   }
 ];
 
