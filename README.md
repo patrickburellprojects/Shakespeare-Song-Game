@@ -48,4 +48,3 @@ This project is licensed under the **MIT License** – feel free to use, modify,
 ## 📬 Contact  
 For questions or feedback, reach out via:  
 - **GitHub Issues**  
-- **Email:** burellcomputing@gmail.com  
