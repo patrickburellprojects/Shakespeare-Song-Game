@@ -443,7 +443,7 @@ For life is best when lived in mirth and play.`,
     answer: "the bare necessities",
     hint1: "Disney",
     hint2: "Jungle Book"
-  },
+  }
 ];
 
 /****************************
@@ -648,4 +648,4 @@ function showAnswerFeedback(message, color) {
   setTimeout(() => {
     answerFeedbackOverlay.style.display = "none";
   }, 2000);
-
+}
