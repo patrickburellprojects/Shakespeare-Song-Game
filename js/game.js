@@ -223,7 +223,7 @@ Or see me whisked away, with passions burned.`,
     answer: "hot to go!",
     hint1: "Released 2023",
     hint2: "Chappel Roan"
-  }
+  },
   {
     text: `No whispers here, nor words of him be told, 
 For shadows cling to halls where silence stays.  
