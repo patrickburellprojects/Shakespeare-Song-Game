@@ -41,8 +41,7 @@ In this game, each sonnet holds the key to a popular song—can you decipher the
 ---
 
 ## 📄 License  
-This project is licensed under the **MIT License** – feel free to use, modify, and share!  
-
+This project is licensed under the **Creative Commons BY-NC-ND 4.0 License** – you are free to use and share it for non-commercial purposes, but modifications and commercial use are not allowed.
 ---
 
 ## 📬 Contact  
