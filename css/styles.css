@@ -378,36 +378,39 @@ body {
 }
 
 /* ----- MOBILE-FRIENDLY FIX (Game Page) ----- */
-@media (max-width: 768px) { 
+@media (max-width: 1024px) {  /* Covers all smartphones & tablets */
   .game-layout {
-    flex-direction: column;  /* Stack everything vertically */
-    align-items: center;  /* Center content */
-    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
   }
 
   .left-panel, .right-panel {
-    width: 100%;  /* Make everything full width */
+    width: 100%;
     min-width: unset;
   }
 
   .game-page-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
     text-align: center;
+    margin-bottom: 10px;
   }
 
   .sonnet-number-heading {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
     margin-bottom: 10px;
   }
 
   .sonnet-box {
-    width: 95%; 
-    padding: 15px;
-    font-size: 1.3rem;
+    width: 95%;
+    padding: 18px;
+    font-size: 1.4rem;
     text-align: center;
+    min-height: 250px;  /* Ensures good spacing */
   }
 
+  /* ----- Answer Box & Button Adjustments ----- */
   .answer-line {
     flex-direction: column;
     align-items: center;
@@ -417,44 +420,89 @@ body {
 
   .answer-input {
     width: 90%;
-    font-size: 1.2rem;
+    font-size: 1.4rem;  /* Bigger text for typing */
     text-align: center;
-    padding: 12px;
+    padding: 14px;
+    border-radius: 10px;
   }
 
   .submit-btn {
-    width: 80%;
-    margin-top: 10px;
-    font-size: 1.2rem;
+    width: 85%;
+    margin-top: 12px;
+    font-size: 1.4rem;
+    padding: 14px;
   }
 
+  /* ----- Hint Boxes Adjustments ----- */
   .hints-row {
     flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .hint-box {
-    width: 80%;
-    font-size: 1rem;
-  }
-
-  .score-row {
-    flex-direction: column;
-    align-items: center;
+    gap: 12px;
     width: 100%;
     margin-top: 15px;
   }
 
+  .hint-box {
+    width: 85%;
+    font-size: 1.3rem;  /* Bigger hint text */
+    height: 70px;  /* Larger for touch */
+  }
+
+  /* ----- Score & End Game Button Adjustments ----- */
+  .score-row {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+
   .score-box {
-    width: 80%;
-    font-size: 1.3rem;
+    width: 85%;
+    font-size: 1.5rem;  /* Bigger font */
+    padding: 14px;
   }
 
   .end-btn {
-    width: 80%;
+    width: 85%;
+    font-size: 1.4rem;
+    margin-top: 12px;
+    padding: 14px;
+  }
+}
+
+/* ----- Special Adjustments for Smaller Phones (≤ 768px) ----- */
+@media (max-width: 768px) {
+  .game-page-title {
+    font-size: 2rem;
+  }
+
+  .sonnet-box {
+    font-size: 1.3rem;
+    padding: 15px;
+    min-height: 220px;
+  }
+
+  .answer-input {
     font-size: 1.2rem;
-    margin-top: 10px;
+    padding: 12px;
+  }
+
+  .submit-btn {
+    font-size: 1.3rem;
+    padding: 12px;
+  }
+
+  .hint-box {
+    font-size: 1.2rem;
+    height: 65px;
+  }
+
+  .score-box {
+    font-size: 1.4rem;
+    padding: 12px;
+  }
+
+  .end-btn {
+    font-size: 1.3rem;
+    padding: 12px;
   }
 }
